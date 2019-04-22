@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        div {
+            box-sizing: border-box;
+        }
+        .box {
+            float: left;
+            width:3.8rem;
+            padding: 0.2rem;
+            background-color: #fff;
+            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+            transition: all 0.5s;
+            /* position: absolute; */
+        }
+
+        .desc {
+            color: #5DC7D7;
+            text-align: center;
+            padding-top: 0.16rem;
+            width: 3.4rem;
+        }
+
+        #wrap {
+            width: 12rem;
+            margin: 0 auto;
+            position: relative;
+            transition: all 0.5s;
+        }
+
+        .img {
+            width: 3.4rem;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 新闻列表 -->
+    <div id='wrap'>
+        <div class="box"><img class="img" src="./static/img/1.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/2.jpg" alt="">
+            <div class="desc">每年的约定，你和ADM展的故事，今年澳洲van
+                鲜奶与您同在！</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/3.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/4.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/5.jpg" alt="">
+            <div class="desc">每年的约定，你和ADM展的故事，今年澳洲van
+                鲜奶与您同在！</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/6.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/7.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/8.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/9.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/10.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/11.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/12.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/13.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/14.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/15.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/16.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/17.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/18.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/19.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+    </div>
+    <script src="./js/flexible.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/waterfall.js"></script>
+    <script>
+         /*居中展示，给父元素wrap设置宽度以及margin：0 auto 即可，
+        rem布局需要添加定时器
+        options下四个参数,hs水平间距,默认值0,vs垂直间距,默认0,clo列数,默认取父容器的最大容量
+        */
+       setTimeout(function(){
+        $("#wrap").Waterfall({
+            hs: 30,
+            vs: 30,
+        });
+       },500)
+
+    </script>
+</body>
+
+</html>

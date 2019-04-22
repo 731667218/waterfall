@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        div {
+            box-sizing: border-box;
+        }
+
+        .box {
+            float: left;
+            width: 380px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+            transition: all 0.5s;
+            /* position: absolute; */
+        }
+
+        .desc {
+            color: #5DC7D7;
+            text-align: center;
+            padding-top: 16px;
+            width: 340px;
+        }
+
+        #wrap {
+            /* width: 1200px; */
+            margin: 0 auto;
+            position: relative;
+            transition: all 0.5s;
+        }
+
+        .img {
+            width: 340px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 新闻列表 -->
+    <div id='wrap'>
+        <div class="box"><img class="img" src="./static/img/1.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/2.jpg" alt="">
+            <div class="desc">每年的约定，你和ADM展的故事，今年澳洲van
+                鲜奶与您同在！</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/3.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/4.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/5.jpg" alt="">
+            <div class="desc">每年的约定，你和ADM展的故事，今年澳洲van
+                鲜奶与您同在！</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/6.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/7.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/8.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/9.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/10.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/11.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/12.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/13.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/14.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/15.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/16.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/17.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/18.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+        <div class="box"><img class="img" src="./static/img/19.jpg" alt="">
+            <div class="desc">Description</div>
+        </div>
+    </div>
+    <script src="./js/flexible.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/waterfall.js"></script>
+    <script>
+         /*基础用法
+        options下四个参数,hs水平间距,默认值0,vs垂直间距,默认0,clo列数,默认取父容器的最大容量
+        */
+        $("#wrap").Waterfall({
+            hs: 30,
+            vs: 30,
+        });
+    </script>
+</body>
+
+</html>
